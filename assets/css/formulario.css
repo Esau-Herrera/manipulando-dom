@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 15px;
 }
 
@@ -11,6 +12,10 @@
   border: 1px solid #eee;
   outline: none;
   width: 65%;
+}
+
+.formulario__input::placeholder{
+  padding: 0px;
 }
 
 .formulario__boton{

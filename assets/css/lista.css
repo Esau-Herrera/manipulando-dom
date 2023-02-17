@@ -21,27 +21,29 @@
   position: relative;
 }
 
-.lista__tarea{
-  padding: 10px;
-}
-
 .icon{
   cursor: pointer;
+}
+
+.lista__tarea{
+  padding: 10px;
 }
 
 .icon:hover{
   color: var(--color1);
 }
 
-.iconCompleto{
+.completeIcon{
   color: var(--color1);
+}
+
+.trashIcon:hover{
+  color: var(--color3);
 }
 
 .lista__i{
   color: var(--color1);
 }
-
-/* Estas clases no estan en el html original */
 
 .wid{
   position: relative;
@@ -52,11 +54,11 @@
   left: 0;
 }
 
-.borrarEspacio{
+.deletSpace{
   position: relative;
   width: 30%;
 }
 
-.sinTareas{
+.noTareas{
   font-size: 48px;
 }
