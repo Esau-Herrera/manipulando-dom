@@ -1,0 +1,62 @@
+.lista{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  max-width: 60vw;
+  height: 60vh;
+}
+
+.lista__item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0;
+  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, .16);
+  position: relative;
+}
+
+.lista__tarea{
+  padding: 10px;
+}
+
+.icon{
+  cursor: pointer;
+}
+
+.icon:hover{
+  color: var(--color1);
+}
+
+.iconCompleto{
+  color: var(--color1);
+}
+
+.lista__i{
+  color: var(--color1);
+}
+
+/* Estas clases no estan en el html original */
+
+.wid{
+  position: relative;
+  background: var(--color4);
+  z-index: 99;
+  width: 100%;
+  top: -100px;
+  left: 0;
+}
+
+.borrarEspacio{
+  position: relative;
+  width: 30%;
+}
+
+.sinTareas{
+  font-size: 48px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="icon" type="image/png" href="./assets/img/rocket.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/bases.css">
+    <link rel="stylesheet" href="./assets/css/titulo.css">
+    <link rel="stylesheet" href="./assets/css/formulario.css">
+    <link rel="stylesheet" href="./assets/css/lista.css">
+    <title>TODO App</title>
+  </head>
+  <body>
+    <main class="mainCard">
+      <div class="mainCard__contenedor">
+        <div class="mainCard__titulo"><img src="./assets/img/rocket.svg"></div>
+        <div class="formulario">
+          <form action="" class="formulario__form">
+            <input
+             type="text"
+             name="tarea"
+             placeholder="Nombre de la tarea"
+             autocomplete="off"
+            class="formulario__input">
+            <button class="formulario__boton" type="submit">Agregar
+              <i class="formulario__i formulario__i--fas"></i>
+            </button>
+          </form>
+        </div>
+        <ul class="lista">
+          <li class="lista__item">
+            <div>
+              <i class="item__i item__i--far icon"></i>
+              <span class="item__tarea">Hacer curso de Dom</span>
+            </div>
+            <i class="lista__i lista__i--fas icon"></i>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
+

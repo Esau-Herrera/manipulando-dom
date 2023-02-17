@@ -1,0 +1,28 @@
+
+.formulario__form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.formulario__input{  
+  padding: 10px;
+  border: 1px solid #eee;
+  outline: none;
+  width: 65%;
+}
+
+.formulario__boton{
+  padding: 10px 15px;
+  background: linear-gradient(
+    109.6deg,
+    var(--color1) 11.2%,
+    var(--color2) 100.2%
+  );
+  color: var(--color4);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

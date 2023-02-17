@@ -1,0 +1,33 @@
+:root{
+  --dosis: 'Dosis', sans-serif;
+  --color1: rgba(62,161,219,1);
+  --color2: rgba(93,52,236,1);
+  --color3: #f00;
+  --color4: #fff;
+}
+
+*{ 
+  font-family: var(--dosis);
+  font-size: 16px;
+}
+
+.mainCard{
+  background: linear-gradient(
+    109.6deg,
+    var(--color1) 11.2%,
+    var(--color2) 100.2% );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  
+}
+
+.mainCard__contenedor{
+  width: 40vw;
+  border-radius: 25px;
+  background: var(--color4);
+  padding: 25px;
+}
+
+
+
