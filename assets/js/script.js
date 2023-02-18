@@ -15,18 +15,17 @@
   
     //Crea el div opadre de la lista de tareas
     const contenedroTareas = document.createElement("div");
-    contenedroTareas.appendChild(casillaCheck());
-  
+    
     const tituloTarea = document.createElement("span");
     tituloTarea.classList.add("item__tarea");
-    tituloTarea.innerText = value;
-  
+    tituloTarea.innerText = value;    
+    contenedroTareas.appendChild(casillaCheck());
     contenedroTareas.appendChild(tituloTarea);
-  
-    const contenido = `        
-      <i class="lista__i fas fa-trash-alt trashIcon icon"></i>`;  
+
     tarea.appendChild(contenedroTareas);
+    tarea.appendChild(borrarIcono());
     lista.appendChild(tarea);
+    
   }
   
   
@@ -47,5 +46,17 @@
     elemnto.classList.toggle("fas");
     elemnto.classList.toggle("completeIcon");
     elemnto.classList.toggle("far");
-  };  
+  }; 
+  
+  const borrarIcono = () => {
+    const i = document.createElement("i");
+    i.classList.add('lista__i', 'fas', 'fa-trash-alt', 'trashIcon', 'icon');
+    i.addEventListener("click", borrarTarea);
+    return i;
+  }
+
+  const borrarTarea = (evento) => {
+    const padre = evento.target.parentElement;
+    padre.remove();
+  }
 })();
