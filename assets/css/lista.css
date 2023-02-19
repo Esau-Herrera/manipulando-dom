@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-width: 60vw;
   height: 60vh;
 }
@@ -41,9 +41,9 @@
   color: var(--color3);
 }
 
-.lista__i{
+/* .lista__i{
   color: var(--color1);
-}
+} */
 
 .wid{
   position: relative;
